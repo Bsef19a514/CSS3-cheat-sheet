@@ -1,0 +1,28 @@
+/* id > class > elements */
+ul li a {
+    text-decoration: none ;
+    color: orangered ;
+}
+
+li a {
+    color: green;
+}
+
+a {
+    text-decoration: none ;
+    color: purple !important;
+}
+
+#Facebook{
+    color: magenta;
+}
+
+.list a{
+    color: black ;
+}
+
+.anchorTag{
+    color: aqua ;
+    text-decoration: underline;
+}
+

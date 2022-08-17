@@ -1,0 +1,28 @@
+
+/* universal selector */
+*{
+    background-color: coral;
+}
+
+/* Selecting element by tag name */
+h1{
+    color: blue;
+    /* font-size: 30px; */
+}
+
+p{
+    border: 1px solid green;
+    background-color: skyblue;
+    color: brown;
+}
+
+/* selecting element by class */
+.sub-Heading{
+    border-bottom: 2px solid gray;
+}
+
+/* selecting element by id */
+#paragraph2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkgreen;
+}

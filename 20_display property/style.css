@@ -1,0 +1,26 @@
+/* by default display is block */
+p ,h2,h3,h4{
+    border: 1px solid red;
+}
+
+/* by default display is inline, "width" does not work with "inline" so we can  use "inline-block"  */
+span,a,img{
+    border: 1px solid green;
+    display: inline-block;
+    /* width: 200px; */
+}
+
+#para2{
+    /* display=none  removes the element from the document and also free the space occupied by element in the document */
+    /* visibility=hidden hides the element from viewing but does not frees the space occupied by the element */
+    background-color: skyblue;
+    /* display: none; */
+
+}
+
+#para2 span{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    /* visibility: hidden; */
+}

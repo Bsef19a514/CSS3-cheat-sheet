@@ -1,0 +1,44 @@
+
+.box{
+    width: 100px;
+    height: 100px;
+}
+/*by default, All elements are positioned static */
+/* (top,left,bottom right) does not work with position=static */
+#static{
+    background-color: lightcoral;
+    position: static;
+    left: 200px;
+}
+
+/* position is relative to its original position */
+#relative{
+    background-color: skyblue;
+    position: relative;
+    left: 200px;
+}
+
+/* absolute--> to position relative to its container */
+.container{
+    border: 1px solid red;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 100px;
+}
+#absolute{
+    background-color: lightgreen;
+    position: absolute;
+    top:0px;
+    left: 0px;
+}
+
+#fixed{
+    background-color: lightslategray;
+    position: fixed;
+}
+
+#sticky{
+    background-color: lightseagreen;
+    position: sticky;
+}

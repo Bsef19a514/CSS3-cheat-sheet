@@ -1,0 +1,143 @@
+/* container properties */
+/* 
+    grid-template-columns
+    grid-template-rows
+
+    grid-auto-flow
+    grid-auto-columns
+    grid-auto-rows
+    
+    grid-column-gap
+    grid-row-gap
+    grid-gap
+
+    justify-items
+    align-itmes
+    place-itmes
+
+    justify-content
+    align-content
+    place-content
+
+    grid-template-areas
+    grid-template 
+    grid
+*/
+.container{
+    border: 2px solid red;
+    text-align: center;
+    height: 400px;
+    width: 80%;
+    display: grid;
+    /* how many columns we want and their width*/
+    grid-template-columns: 70px 70px 70px;
+     grid-template-columns: 70px 70px 70px auto; /* fill up the remaining space on first row*/
+     grid-template-columns: 1fr 2fr 1fr; /* allocate space in fractions*/ 
+    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: 1fr minmax(300px,1fr);
+    /* auto-fill automatically fills the container */
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+     /*auto fit auto matticlly adjusts the width of columns to fill up the conatainer  */
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    /* naming grid columns and row lines */
+    grid-template-columns: [col-one] 1fr [coli_two] 1fr [col_3] 1fr;
+
+    grid-template-rows: 1fr 1fr;  /* two rows of equal fraction*/
+    grid-template-rows: 50px 50px;
+
+    /* incoming cells with be place drowwise or columnwise bydeault-row */
+    grid-auto-flow: row ; 
+    /* give height to our remaing extra rows */
+    grid-auto-rows: 30px;
+
+    grid-column-gap:5px;
+    grid-row-gap:5px ;
+    grid-gap: 10px; /* 10px gap on both row and columns*/
+    /* grid-gap: row col */
+    grid-gap: 10px 0px;
+
+    /* align-items positions the items vertically with the grid cells . default=stretch*/
+    align-items: center;
+
+    /* justify-items positions the items horizontally with the grid cells . default=stretch*/
+    justify-items: center;
+
+    /* place-items is a shorthand property of align-items and justify-items  */
+    /* place-items: align-items justify-items; */
+    place-items: center stretch;
+    place-items: stretch;
+
+     /* align-content positions the items vertically with the whole grid container . default=flex-start*/
+     align-content: center;
+
+     /* justify-content positions the items horizontally with the whole grid container . default=flex-start*/
+     grid-template-columns: 50px 50px;
+     justify-content: center;
+
+    /* place-content is a shorthand property of align-content and justify-content  */
+    /* place-content: align-items justify-items; */
+    place-content:space-around center;
+    place-content:space-around;
+
+    /* grid is the short hand property of (grid-template-rows, grid-template-columns) or (grid-auto-flow and  (grid-auto-columns or grid-auto-rows) / no of columns ) but only one at a time*/
+    /* grid: rows/columns */
+    /* for explicit values */
+    grid:50px auto 100px/repeat(3,minmax(50px,1fr));
+    /* for implicit values */
+    grid: auto-flow 50px/ repeat(3,minmax(50px,1fr));
+
+   
+}
+
+.container2{
+    margin: 20px 5px;
+    border: 2px solid red;
+    text-align: center;
+    height: 400px;
+    width: 80%;
+    display: grid;
+
+    grid-template-columns: [col-one] 1fr [col-two] 1fr [col-three] 1fr;
+    grid-template-rows: 60px auto 60px;
+    /*grid-template-areas only work if we specify item property "grid-area" each "" represents each sigle row */
+    grid-template-areas:
+    "header header header"
+    "main main sidebar"
+    "footer footer footer";
+    /* grid-template is the shorthand property of grid-template-areas, grid-template-rows, grid-template-columns */
+
+
+    
+
+}
+.section{
+    border: 1px solid black;
+    background-color: grey;
+}
+.head{
+    grid-area: header;
+}
+.body{
+    grid-area: main;
+}
+.footer{
+    grid-area: footer;
+}
+
+/* item properties */
+/* 
+    grid-column-start
+    grid-column-end,
+    grid-row-start
+    grid-row-end,
+    grid-column
+    grid-row,
+    grid-area,
+    justify-self,
+    align-self
+    place-self
+*/
+.item{
+    border: 1px solid green;
+    background-color: skyblue;
+}

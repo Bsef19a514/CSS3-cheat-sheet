@@ -1,0 +1,40 @@
+div{
+    width: 600px;
+    height: 600px;
+    /* background clip by default is border-box(background is set to the outer edge of the border), in padding box, (background is set to the inner edge of the border) */
+    /* border: 10px dotted red;
+    background-color: lightblue;
+    background-clip:padding-box; */
+    border: 1px solid gray;
+    margin: 50px auto;
+    background-image:url(images/img_girl.jpg) ;
+    /* by default the image is set to "repeat" */
+    background-repeat: no-repeat;
+    /* to fit the image according to div size */
+        /* cover --> fits the image according to container, "contain" scales up the img size as maximum it can */
+    background-size: cover;
+    /* to position the background img */
+    background-position: center;
+} 
+
+/* background-attachment-->by default it is set to scroll */
+/* 
+body{
+    background-image:url(images/img_girl.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    background-attachment: fixed;
+} */
+
+/* 
+    The shorthand CSS Background property order: 
+    background-image 
+    background-position / background-size 
+    background-repeat 
+    background-attachment 
+    background-origin
+    background-clip 
+    background-color
+*/

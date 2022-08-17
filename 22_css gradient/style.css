@@ -1,0 +1,30 @@
+#linear{
+    width: 300px;
+    height: 300px;
+    border: 1px solid grey;
+    border-radius: 50%;
+    margin: auto auto;
+    /* liner-gradient (can give 2 or 3 colors)*/
+    background-image: linear-gradient( blue,red);
+    background-image: linear-gradient( blue,red,green);
+    /*(by default from top to bottom) we can also specify the direction of gradient */
+    /* background-image: linear-gradient(to bottom, blue,red,green);
+    background-image: linear-gradient(to bottom left, blue,red,green); */
+    /* we can also give direction in degrees */
+    /* background-image: linear-gradient(0deg , blue,red,green); */
+
+    /* we can also add after how much pixels a color start gradient */
+    /* background-image: linear-gradient(to bottom left, blue 40%,red 70%,green 80%); */
+    /* we also also repeat the gradient */
+    background-image:repeating-linear-gradient(to bottom left, blue 20%,red 30%,green 50%);
+}
+
+#radial{
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-image: radial-gradient( yellow  ,black, orangered);
+    /* background-image: radial-gradient(closest-corner at 200px 50px, yellow  , orangered);
+    background-image: radial-gradient(farthest-corner at 10px 110px, yellow  , orangered); */
+}

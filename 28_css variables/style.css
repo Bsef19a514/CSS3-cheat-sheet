@@ -1,0 +1,44 @@
+:root{
+    --heading-color:white;
+    --heading-bg-color: black
+}
+
+/* 
+    :root is targeting the <html> tags of our html file beacause all other tags are inside that tag.
+    variables are declared with --variableName: value
+    variables are called using var(--variableName)
+
+    Advantages:
+    1) makes changes easily
+    2) makes code more readable
+    3) we can also provide a fall back value in case pur varible doesnot occur or browser is not detecting it
+*/
+
+
+h1{
+    color: var(--heading-color);
+    background-color: var(--heading-bg-color);
+}
+h2{
+    color:var(--heading-color);
+    background-color: var(--heading-bg-color, grey);
+}
+
+h3{
+    color:var(--heading-color);
+    background-color: var(--heading-bg-color,grey);
+}
+/* 
+    variables defined in :root{ } areglobal but we can also have local scoped variables.
+*/
+button{
+    --scoppedColor:white;
+    --scopped-bg-color:black;
+    background-color: var(--scopped-bg-color);
+    color: var(--scoppedColor);
+}
+
+p{
+    background-color: var(--scopped-bg-color);
+    color: var(--scoppedColor);
+}

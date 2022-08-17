@@ -1,0 +1,17 @@
+h1{
+    text-align: center;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+@font-face {
+    font-family: myfonts;
+    src: url(Caveat/Caveat-VariableFont_wght.ttf);
+}
+
+h1{
+    font-family: myfonts;
+    text-decoration: underline solid black;
+}

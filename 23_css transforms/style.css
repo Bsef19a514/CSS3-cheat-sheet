@@ -1,0 +1,29 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+    margin: 200px auto;
+
+    /*  2d transforms  */
+    /* transform: rotate(280deg);
+    transform: scale(1.1);
+    transform: scaleY(2);
+    transform: skew(50deg);
+    transform:translate(100px);
+    transform: translateY(100px); */
+
+    /* to apply multiple transforms */
+    /* transform: matrix ( [scaleX], [skewY], [skewX], [scaleY], [translateX], [translateY], ); */
+    /* transform: matrix(2,1,1,2,70,-200); */
+
+    /* 3d transforms */
+
+}
+
+div:hover{
+    cursor: pointer;
+    transition:all 2s linear;
+    transform: rotateX(360deg);
+    /* transform: rotateY(360deg); */
+   
+}

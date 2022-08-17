@@ -1,0 +1,38 @@
+#para1{
+/* text align */
+    text-align: center;
+    text-align: left;
+    text-align: right;
+    text-align: justify;
+/* word spacing --> to set space between two words */
+    word-spacing: 5px;
+/* letter-spacing --> to set space between two letters*/
+    letter-spacing:2px;
+}
+
+h1{
+/* text decoration */
+    /* text-decoration:line-through solid blue */
+    text-decoration: underline solid black;
+/* text-transform */
+    text-transform: capitalize;
+/* text-shadow (distance of shadow to the right, dis of shadow to bottom, how much we want to blur it, color of shadow)*/
+    text-shadow: 3px 1px 4px gray ;
+}
+
+a{
+    text-decoration: none;
+}
+
+#para2{
+    border: 1px solid red;
+/* text indent----> indents(add space at left) only to the first line*/
+    text-indent: 50px;
+
+/* text overflow 
+        it only work when we define overflow and white-spaces properties
+*/
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}

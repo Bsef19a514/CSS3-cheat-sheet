@@ -1,0 +1,38 @@
+.main-Heading{
+    color: orangered;
+}
+
+/* Attribute selectors */
+
+/* element name[attribute name]*/
+input[placeholder]{     
+    border: 2px solid green;
+}
+
+/* element name[attribute name=value]*/
+input[type='text']{
+    background-color: palegreen;
+}
+input[type='button']{
+    background-color: skyblue;
+    cursor: pointer;
+}
+input[placeholder='email']{
+    background-color: lightpink;
+
+}
+
+/* Attribute starts with -->  symbol is ^   */
+p[title^="g"]{
+    border: 2px solid purple;
+}
+
+/* Attribute ends with -->  symbol is $  */
+p[title$='ro']{
+    background-color: lightsalmon;
+}
+
+/* Attribute contains word-->  symbol is ~  */
+p[name~="best"]{
+    color:darkblue;
+}

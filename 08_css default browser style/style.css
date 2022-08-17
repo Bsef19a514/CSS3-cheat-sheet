@@ -1,0 +1,9 @@
+/* reset css default style */
+*{
+    text-decoration: none;
+    color: #000;
+    list-style-type: none;
+    padding: 0%;
+    cursor: default;
+    /* cursor: pointer; */
+}

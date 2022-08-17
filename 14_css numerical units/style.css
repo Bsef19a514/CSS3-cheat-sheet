@@ -1,0 +1,52 @@
+h1{
+    width: fit-content;
+    margin: 0px auto;
+    background-color: skyblue;
+    border: 1px solid blue;
+    margin-bottom: 10px;
+}
+
+/* 
+Absolute Units (fixed):
+
+px
+cm
+mm
+in
+pt (points)
+pc (picas)
+*/
+
+
+/* 
+Relative Units (fluid):
+
+em (Rel to container)
+ch (rel to width of 0)
+rem (rel of font-size of root element)
+vw (rel to 1% of viewport width)
+vh (rel to 1% of viewport height)
+%  (rel to parent element)
+*/
+#outerdiv{
+    background-color: lightgray;
+    padding: 20px;
+    /* width: 450px; */
+    width: 70vw;
+}
+#absolute{
+    width: 50px;
+    background-color: lightgreen;
+}
+
+#relative{
+    /* width: 50vw; */
+    width: 50%;
+    background-color: lightcoral;
+}
+
+/* by default the font size of paragraph is 16px and 1em==16px */
+p{
+    /* font-size: 2em; */
+    font-size:100%;
+}

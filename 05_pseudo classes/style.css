@@ -1,0 +1,45 @@
+*{
+    text-align: center;
+}
+
+/* unvisited link */
+a:link{
+    text-decoration: none;
+}
+
+/* hovered link */
+a:hover{
+    
+    color: orangered;
+}
+
+/* active link */
+a:active{
+    color:rgb(67, 185, 77)
+}
+
+/* once link is visited */
+a:visited{
+    color: darkred;
+}
+
+/*  checked */
+input[type="checkbox"]:checked{
+    outline: 2px solid green;
+}
+
+/* disabled */
+input[type="text"]:disabled {
+    background-color: skyblue;
+}
+/* focused */
+#email:focus {
+    outline: 0px;
+    border: 0px solid black;
+    background-color: lightsalmon;
+}
+
+/* add style to a specific child */
+p:nth-child(2){
+    color: green;
+}

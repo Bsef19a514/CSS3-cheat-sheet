@@ -1,0 +1,46 @@
+/* media queries allow us to make our web page responsive on multiple devices */
+#img{
+    width: 200px;
+    height: 200px;
+    border: 2px solid green;
+    margin: 0px auto;
+}
+/* type of media queries
+    1) speach
+    2) print
+    3) screen
+*/
+
+/* specifies how the webpage will be prited on the paper (ctrl+p) */
+@media print{
+    body{
+        text-decoration: underline;
+        background-color:black;
+        color: brown;
+        
+    }
+}
+
+@media screen and ( max-width:400px){
+    h1{
+        font-size: 25px;
+        color: red;
+    }
+    p{
+        color: blue;
+        font-size: 20px;
+    }
+    #img{
+        border-radius: 50%;
+    }
+    img{
+        border-radius: 50%;
+    }
+
+}
+
+@media (orientation:landscape){
+    body{
+        background-color: skyblue;
+    }
+}

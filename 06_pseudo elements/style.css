@@ -1,0 +1,26 @@
+*{
+    text-align: center;
+}
+
+#para1::first-letter{
+    color: red;
+    font-size: 40px; 
+     text-shadow: 1px 2px 1px grey ;
+}
+
+#para1::first-line{
+    color:green;
+}
+
+::selection{
+    color: gold;
+    background-color: black;
+}
+
+.plus::after{
+    content: "+";
+}
+
+.plus::before{
+    content: " - ";
+}

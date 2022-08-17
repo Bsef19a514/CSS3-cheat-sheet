@@ -1,0 +1,31 @@
+div{
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: brown;
+    /* trasnition-property specifies on which property (from event triggers like in this case hover) the trasition should ocuur */
+    /* transition-property: width; */
+    transition-property: all;
+    transition-delay: 1s;
+    transition-duration: 5s;
+    /* how the trasition occur */
+    /* 
+    ease-in : starts slowly then speeds up
+    ease-out: starts normally then slows down
+    */
+    transition-timing-function: ease-out;
+
+    /*
+     specify all the properties in 1 line 
+        trasition: trasition-property trasition-duration transition-timing-function
+    */
+    transition: all .5s linear ;
+}
+
+div:hover{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: limegreen;
+    transform: rotate(180deg);
+}

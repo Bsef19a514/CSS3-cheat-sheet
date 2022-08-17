@@ -1,0 +1,25 @@
+
+div{
+    background-color: lightblue;
+    width: 100px;
+    height:100px;
+    margin: 20px;
+
+    /* border-width: 3px;
+    border-color: red ;
+    border-style: groove; */
+
+    border:2px solid green ;
+
+    /* border-width: 2px 4px 2px 6px;
+    border-color: purple lightcoral red yellowgreen;
+    border-style: solid dotted dashed ridge ; */
+
+    border-top-left-radius:50px ;
+    border-bottom-right-radius:50px ;
+
+    /* to make a perfect circle 1) take an element having same height and width 2) apply border radius of 50px or 50%*/
+    /* border-radius:50% */
+
+
+}

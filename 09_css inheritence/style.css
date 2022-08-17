@@ -1,0 +1,32 @@
+p{
+    color: green;
+}
+#para{
+    color: red;
+}
+.container {
+    color: blue;
+    background-color: lightblue;
+}
+
+
+
+/* inherit sets the value by inherting from the container(parent) */
+.inherit{
+    color:inherit
+}
+
+/* initial sets the value back to default browser style */
+.initial{
+    color: initial;
+}
+
+/* if the element is inherited (has a parent) unset acts like "inherit" othervise acts like "initial" */
+.unset{
+    color: unset;
+}
+
+/* if the user has defined the style it will reverts back to it else use default browser style */
+.revert{
+    color: revert;
+}
